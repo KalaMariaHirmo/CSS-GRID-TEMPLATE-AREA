@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(158, 19, 54), rgb(207, 0, 117));
+}
+.container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 150px 200px 200px 100px;
+    grid-template-areas: 
+    "nav nav nav"
+    "sidebar-1 content sidebar-2"
+    "sidebar-1 content sidebar-2"
+    "footer footer footer"
+}
+.item {
+    background-color: crimson;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: darkred;
+}
+
+.item1 {
+    grid-area: sidebar-1;
+}
+.item2 {
+    grid-area: content;
+}
+.item3 {
+    grid-area: sidebar-2;
+}
+.item4 {
+    grid-area: footer;
+}
+.item-nav {
+    grid-area: nav;
+}
